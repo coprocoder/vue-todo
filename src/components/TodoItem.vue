@@ -1,8 +1,9 @@
 <template>
     <li>
         <span v-bind:class="{done: todo.completed}">
-            <input type="checkbox" v-on:change="todo.completed = !todo.completed">
-            <strong>{{index + 1}}</strong>
+            <input type="checkbox" class="item-title" 
+                v-on:change="todo.completed = !todo.completed">
+            <strong class="item-index">{{index + 1}}</strong>
             <!-- {{todo.title | uppercase}} -->
             {{todo.title}}
         </span>
@@ -36,8 +37,10 @@ export default {
         padding: .5rem 2rem;
         margin-bottom: 1rem;
     }
-    
-    input {
+    .item-index {
+        margin: 0 10px;
+    }
+    .item-title {
         margin-right: 1rem;
     }
 
