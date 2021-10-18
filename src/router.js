@@ -3,7 +3,7 @@ import Home from '@/views/Home'
 
 const routeInfos = [
     {
-        path : "",
+        path : "/",
         component: Home
     },
     {
